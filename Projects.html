@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Projects - CodeMaster</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <h2><i class="fas fa-laptop-code"></i> CodeMaster</h2>
+            </div>
+            <div class="nav-menu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="courses.html" class="nav-link">Courses</a>
+                <a href="web-development.html" class="nav-link">Web Dev</a>
+                <a href="cyber-security.html" class="nav-link">Cyber Security</a>
+                <a href="ethical-hacking.html" class="nav-link">Ethical Hacking</a>
+                <a href="ai-ml.html" class="nav-link">AI & ML</a>
+                <a href="practice.html" class="nav-link">Practice</a>
+                <a href="projects.html" class="nav-link active">Projects</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="page-hero projects-hero">
+        <div class="container">
+            <h1><i class="fas fa-project-diagram"></i> Student Projects</h1>
+            <p>Showcase of projects built by our students</p>
+        </div>
+    </section>
+
+    <section class="projects-showcase">
+        <div class="container">
+            <div class="projects-filter">
+                <button class="filter-btn active" onclick="filterProjects('all')">All Projects</button>
+                <button class="filter-btn" onclick="filterProjects('web')">Web Development</button>
+                <button class="filter-btn" onclick="filterProjects('security')">Cyber Security</button>
+                <button class="filter-btn" onclick="filterProjects('ai')">AI & ML</button>
+                <button class="filter-btn" onclick="filterProjects('hacking')">Ethical Hacking</button>
+            </div>
+
+            <div class="projects-grid">
+                <div class="project-card" data-category="web">
+                    <img src="https://via.placeholder.com/300x200" alt="E-commerce Project">
+                    <div class="project-info">
+                        <h3>E-commerce Website</h3>
+                        <p>Full-stack e-commerce platform with React and Node.js</p>
+                        <div class="tech-stack">
+                            <span>React</span>
+                            <span>Node.js</span>
+                            <span>MongoDB</span>
+                        </div>
+                        <a href="#" class="btn-view">View Project</a>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="security">
+                    <img src="https://via.placeholder.com/300x200" alt="Security Tool">
+                    <div class="project-info">
+                        <h3>Network Scanner</h3>
+                        <p>Python-based network security scanner</p>
+                        <div class="tech-stack">
+                            <span>Python</span>
+                            <span>Socket</span>
+                            <span>Security</span>
+                        </div>
+                        <a href="#" class="btn-view">View Project</a>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="ai">
+                    <img src="https://via.placeholder.com/300x200" alt="AI Project">
+                    <div class="project-info">
+                        <h3>Image Classifier</h3>
+                        <p>Machine learning model for image classification</p>
+                        <div class="tech-stack">
+                            <span>Python</span>
+                            <span>TensorFlow</span>
+                            <span>CNN</span>
+                        </div>
+                        <a href="#" class="btn-view">View Project</a>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="hacking">
+                    <img src="https://via.placeholder.com/300x200" alt="Hacking Tool">
+                    <div class="project-info">
+                        <h3>Vulnerability Scanner</h3>
+                        <p>Web application vulnerability assessment tool</p>
+                        <div class="tech-stack">
+                            <span>Python</span>
+                            <span>Security</span>
+                            <span>Automation</span>
+                        </div>
+                        <a href="#" class="btn-view">View Project</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ethical Hacking - CodeMaster</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <h2><i class="fas fa-laptop-code"></i> CodeMaster</h2>
+            </div>
+            <div class="nav-menu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="courses.html" class="nav-link">Courses</a>
+                <a href="web-development.html" class="nav-link">Web Dev</a>
+                <a href="cyber-security.html" class="nav-link">Cyber Security</a>
+                <a href="ethical-hacking.html" class="nav-link active">Ethical Hacking</a>
+                <a href="ai-ml.html" class="nav-link">AI & ML</a>
+                <a href="practice.html" class="nav-link">Practice</a>
+                <a href="projects.html" class="nav-link">Projects</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="page-hero hacking-hero">
+        <div class="container">
+            <h1><i class="fas fa-user-secret"></i> Ethical Hacking</h1>
+            <p>Learn penetration testing and ethical hacking techniques</p>
+        </div>
+    </section>
+
+    <section class="hacking-modules">
+        <div class="container">
+            <div class="module-cards">
+                <div class="hacking-module" id="pentest">
+                    <h3>Penetration Testing</h3>
+                    <div class="module-content">
+                        <h4>Tools & Techniques:</h4>
+                        <ul>
+                            <li>Kali Linux Environment</li>
+                            <li>Metasploit Framework</li>
+                            <li>Vulnerability Scanning</li>
+                            <li>Exploitation Techniques</li>
+                            <li>Post-Exploitation</li>
+                        </ul>
+                        <div class="lab-exercises">
+                            <h4>Practice Labs:</h4>
+                            <button class="lab-btn" onclick="startLab('nmap-scan')">Nmap Scanning</button>
+                            <button class="lab-btn" onclick="startLab('metasploit')">Metasploit</button>
+                            <button class="lab-btn" onclick="startLab('vuln-assessment')">Vulnerability Assessment</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hacking-module" id="webhack">
+                    <h3>Web Application Hacking</h3>
+                    <div class="module-content">
+                        <h4>Attack Vectors:</h4>
+                        <ul>
+                            <li>SQL Injection Attacks</li>
+                            <li>Cross-Site Scripting (XSS)</li>
+                            <li>Cross-Site Request Forgery (CSRF)</li>
+                            <li>Session Hijacking</li>
+                            <li>OWASP Top 10</li>
+                        </ul>
+                        <div class="lab-exercises">
+                            <h4>Practice Labs:</h4>
+                            <button class="lab-btn" onclick="startLab('sql-injection')">SQL Injection</button>
+                            <button class="lab-btn" onclick="startLab('xss-attack')">XSS Attack</button>
+                            <button class="lab-btn" onclick="startLab('csrf-attack')">CSRF Attack</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

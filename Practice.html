@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Practice - CodeMaster</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <h2><i class="fas fa-laptop-code"></i> CodeMaster</h2>
+            </div>
+            <div class="nav-menu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="courses.html" class="nav-link">Courses</a>
+                <a href="web-development.html" class="nav-link">Web Dev</a>
+                <a href="cyber-security.html" class="nav-link">Cyber Security</a>
+                <a href="ethical-hacking.html" class="nav-link">Ethical Hacking</a>
+                <a href="ai-ml.html" class="nav-link">AI & ML</a>
+                <a href="practice.html" class="nav-link active">Practice</a>
+                <a href="projects.html" class="nav-link">Projects</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="page-hero practice-hero">
+        <div class="container">
+            <h1><i class="fas fa-code"></i> Code Practice</h1>
+            <p>Practice coding with our online editor and challenges</p>
+        </div>
+    </section>
+
+    <section class="practice-area">
+        <div class="container">
+            <div class="code-editor-container">
+                <div class="editor-tabs">
+                    <button class="tab-btn active" onclick="switchTab('html')">HTML</button>
+                    <button class="tab-btn" onclick="switchTab('css')">CSS</button>
+                    <button class="tab-btn" onclick="switchTab('js')">JavaScript</button>
+                    <button class="tab-btn" onclick="switchTab('python')">Python</button>
+                    <button class="tab-btn" onclick="switchTab('sql')">SQL</button>
+                </div>
+                
+                <div class="editor-area">
+                    <div class="code-input">
+                        <textarea id="html-code" class="code-text active" placeholder="Write your HTML code here..."></textarea>
+                        <textarea id="css-code" class="code-text" placeholder="Write your CSS code here..."></textarea>
+                        <textarea id="js-code" class="code-text" placeholder="Write your JavaScript code here..."></textarea>
+                        <textarea id="python-code" class="code-text" placeholder="Write your Python code here..."></textarea>
+                        <textarea id="sql-code" class="code-text" placeholder="Write your SQL queries here..."></textarea>
+                    </div>
+                    
+                    <div class="code-output">
+                        <iframe id="output-frame"></iframe>
+                    </div>
+                </div>
+                
+                <div class="editor-controls">
+                    <button class="run-btn" onclick="runCode()">
+                        <i class="fas fa-play"></i> Run Code
+                    </button>
+                    <button class="save-btn" onclick="saveCode()">
+                        <i class="fas fa-save"></i> Save
+                    </button>
+                    <button class="reset-btn" onclick="resetCode()">
+                        <i class="fas fa-redo"></i> Reset
+                    </button>
+                </div>
+            </div>
+
+            <div class="challenges-section">
+                <h2>Coding Challenges</h2>
+                <div class="challenges-grid">
+                    <div class="challenge-card">
+                        <h3>Beginner Challenges</h3>
+                        <ul>
+                            <li onclick="loadChallenge('fibonacci')">Fibonacci Sequence</li>
+                            <li onclick="loadChallenge('palindrome')">Palindrome Checker</li>
+                            <li onclick="loadChallenge('calculator')">Simple Calculator</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="challenge-card">
+                        <h3>Intermediate Challenges</h3>
+                        <ul>
+                            <li onclick="loadChallenge('sorting')">Sorting Algorithms</li>
+                            <li onclick="loadChallenge('api-call')">API Integration</li>
+                            <li onclick="loadChallenge('database')">Database CRUD</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="challenge-card">
+                        <h3>Advanced Challenges</h3>
+                        <ul>
+                            <li onclick="loadChallenge('machine-learning')">ML Model</li>
+                            <li onclick="loadChallenge('security')">Security Implementation</li>
+                            <li onclick="loadChallenge('optimization')">Performance Optimization</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

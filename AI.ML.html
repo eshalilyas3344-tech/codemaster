@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI & Machine Learning - CodeMaster</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <h2><i class="fas fa-laptop-code"></i> CodeMaster</h2>
+            </div>
+            <div class="nav-menu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="courses.html" class="nav-link">Courses</a>
+                <a href="web-development.html" class="nav-link">Web Dev</a>
+                <a href="cyber-security.html" class="nav-link">Cyber Security</a>
+                <a href="ethical-hacking.html" class="nav-link">Ethical Hacking</a>
+                <a href="ai-ml.html" class="nav-link active">AI & ML</a>
+                <a href="practice.html" class="nav-link">Practice</a>
+                <a href="projects.html" class="nav-link">Projects</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="page-hero ai-hero">
+        <div class="container">
+            <h1><i class="fas fa-robot"></i> AI & Machine Learning</h1>
+            <p>Build intelligent systems and predictive models</p>
+        </div>
+    </section>
+
+    <section class="ai-modules">
+        <div class="container">
+            <div class="module-cards">
+                <div class="ai-module" id="ml">
+                    <h3>Machine Learning</h3>
+                    <div class="module-content">
+                        <h4>Core Concepts:</h4>
+                        <ul>
+                            <li>Python for Data Science</li>
+                            <li>Supervised Learning</li>
+                            <li>Unsupervised Learning</li>
+                            <li>Model Evaluation</li>
+                            <li>Scikit-learn Library</li>
+                        </ul>
+                        <div class="lab-exercises">
+                            <h4>AI Projects:</h4>
+                            <button class="lab-btn" onclick="startAILab('linear-regression')">Linear Regression</button>
+                            <button class="lab-btn" onclick="startAILab('classification')">Classification</button>
+                            <button class="lab-btn" onclick="startAILab('clustering')">Clustering</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="ai-module" id="deeplearning">
+                    <h3>Deep Learning</h3>
+                    <div class="module-content">
+                        <h4>Advanced Topics:</h4>
+                        <ul>
+                            <li>Neural Networks</li>
+                            <li>Convolutional Neural Networks (CNN)</li>
+                            <li>Recurrent Neural Networks (RNN)</li>
+                            <li>TensorFlow & Keras</li>
+                            <li>Computer Vision</li>
+                        </ul>
+                        <div class="lab-exercises">
+                            <h4>AI Projects:</h4>
+                            <button class="lab-btn" onclick="startAILab('neural-network')">Neural Networks</button>
+                            <button class="lab-btn" onclick="startAILab('image-classification')">Image Classification</button>
+                            <button class="lab-btn" onclick="startAILab('nlp')">Natural Language Processing</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
